@@ -1,0 +1,27 @@
+.matchcheck {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    label {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        margin-bottom: 4px;
+        font-size: 16px;
+    }
+    .checkbox {
+        display: flex;
+        gap: 10px;
+        input {
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 48px;
+            border: none;
+            background-color: white;
+            border: 3px solid #7a0811;
+        }
+    }
+    .error {
+        color: red;
+        font-size: 12px;
+    }
+}
