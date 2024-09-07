@@ -1,0 +1,65 @@
+
+// grid display with six items, three in each row, with the ability to resize to two items in each row
+.form {
+    width: min-content !important;
+    .photos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        .photo {
+            width: 180px;
+            height: 240px;
+            border: 2px solid white;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .upload {
+                position: absolute;
+                border: 2px solid #fff;
+                display: inline-block;
+                cursor: pointer;
+                border-radius: 100%;
+                padding-left: 14px; padding-right: 14px;
+                height: 40px;
+                width: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(0, 0, 0, 0.5);
+            }
+
+            input[type=file] {
+                display: none;
+            }
+
+            img {
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .error {
+                position: relative;
+                top: 100px;
+                color: white;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .invalid {
+        height: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        margin-top: 0px !important;
+    }
+}
