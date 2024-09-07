@@ -1,0 +1,20 @@
+@use "../../styles/background" as bg;
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  padding-top: 120px;
+  @include bg.background();
+
+  .content {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+}

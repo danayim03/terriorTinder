@@ -1,0 +1,42 @@
+@use "../../styles/background" as bg;
+
+.onboarding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+    padding-top: 120px;
+    @include bg.background();
+
+    .hey {
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .info {
+        font-size: 20px;
+        margin-bottom: 0px;
+
+        .progress {
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+        }
+
+    }
+
+    form {
+        margin-top: 40px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+
+        button {
+            margin-top: 10px;
+        }
+    }
+
+}

@@ -1,0 +1,196 @@
+@use "../../styles/background" as bg;
+
+.matchmaking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    @include bg.background();
+
+    h1 {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin: 0px;
+    }
+
+    .matchspace {
+        /*   */
+        /* width: 440px; */
+        width: min-content  ;
+        /* border: 1px solid white; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .empty {
+            width: 340px;
+            height: 500px;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .match {
+            width: 340px;
+            /* height: 500px; */
+            border-radius: 10px;
+            border: 2px solid white;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .name {
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+
+                font-size: 24px;
+                font-weight: bold;
+                color: black;
+                text-align: center;
+                width: 100%;
+                z-index: 99;
+                background-color: white;
+            }
+
+            .exit {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 30px;
+                height: 30px;
+                z-index: 999;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* background-color: white; */
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            img {
+                width: 100%;
+                height: 500px;
+                object-fit: contain;
+                background-color: black;
+                border-radius: 10px;
+            }
+
+            .confetti {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 99;
+                border-radius: 10px;
+                font-size: 30px;
+                font-weight: bold;
+                color: white;
+
+            }
+        }
+
+        .person {
+            width: 340px;
+            /* height: 500px; */
+            border-radius: 10px;
+            border: 2px solid white;
+            position: relative;
+            
+            img {
+                width: 100%;
+                height: 500px;
+                object-fit: contain;
+                background-color: black;
+                /* border-radius: 10px; */
+            }
+
+            .name {
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+
+                font-size: 24px;
+                font-weight: bold;
+                color: black;
+                text-align: center;
+                width: 100%;
+                z-index: 99;
+                background-color: white;
+
+            }
+
+            .bio {
+                padding: 10px;
+                background-color: white;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+                z-index: 99;
+                display: flex;
+                justify-content: space-between;
+                
+                span {
+                    font-size: 12px;
+                    color: black;
+                    text-align: center;
+                    width: 100px;
+                    @include bg.background();
+                    padding: 5px;
+                    border-radius: 8px;
+                }
+            }
+        }
+
+        .reject, .like {
+            background-color: white;
+            padding: 10px;
+
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .navigation {
+        display: flex;
+        gap: 20px;
+
+        a {
+            padding: 6px 40px;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .active {
+            background-color: white;
+            color: red;
+        }
+    }
+
+}

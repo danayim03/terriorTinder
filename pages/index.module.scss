@@ -1,0 +1,62 @@
+@use "../styles/background" as bg;
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+    padding-top: 220px;
+    gap: 20px;
+    @include bg.background();
+
+    .action {
+        font-size: 42px;
+        color: #fff;
+        margin-bottom: 0px;
+    }
+
+    .tagline {
+        font-size: 24px;
+        color: #fff;
+    }
+
+    .welcomeback {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-family: "vcute";
+        font-size: 28px;
+    }
+
+    .googlesignin {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        cursor: pointer;
+        margin-top: 20px;
+        padding: 15px 30px;
+        font-size: 20px;
+        border-radius: 48px;
+        border: none;
+        background-color: white;
+        border: 3px solid #7a0811;
+        transition: all 0.3s ease;
+            &:hover {
+                background-color: transparent;
+                color: white;
+                border: 3px solid white;
+            }
+
+        img {
+            height: 38px;
+            width: 38px;
+        }
+    }
+
+
+}
