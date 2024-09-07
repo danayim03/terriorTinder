@@ -1,0 +1,6 @@
+@use "../styles/background" as bg;
+
+.load {
+    @include bg.background();
+    @include bg.center();
+}
